@@ -3,3 +3,48 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.body__container{
+    max-width: 1440px;
+    margin: auto;
+    background-color:#ffffff;
+}
+
+.debag .header__content, .debag .display__img, .debag .display__text__left, .debag .display__text__midle, .debag .display__text__right, .debag .footer__content{
+    background-color: aqua;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*HEADER CONTENT*/
+.header__content{
+    min-height: 150px;
+    margin-bottom: 25px;
+}
+/*F.HEADER CONTENT*/
+/*F.MAIN*/
+.display__img{
+    min-height: 500px;
+    margin-bottom: 20px;
+}
+.display__text__left, .display__text__midle, .display__text__right{
+    min-height: 650px;
+    margin-bottom: 10px;
+}
+.display__text__left, .display__text__right{
+    width: 20%;
+    float: left;
+}
+.display__text__midle{
+    width: calc(60% - 40px);
+    margin: 0 20px;
+    float: left;
+}
+/*F.MAIN*/
+.footer__content{
+    min-height: 100px;
+}
+
