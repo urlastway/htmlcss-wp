@@ -1,7 +1,9 @@
+/*---LAYOUT---*/
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .body__container{
@@ -10,9 +12,9 @@ body{
     background-color:#ffffff;
 }
 
-.debag .header__content, .debag .display__img, .debag .display__text__left, .debag .display__text__midle, .debag .display__text__right, .debag .footer__content{
+/*.debag .header__content, .debag .display__img, .debag .display__text__left, .debag .display__text__midle, .debag .display__text__right, .debag .footer__content{
     background-color: aqua;
-}
+}*/
 
 .clearfix::after{
     content: "";
@@ -48,3 +50,32 @@ body{
     min-height: 100px;
 }
 
+/*---F.LAYOUT---*/
+
+/*HEADER*/
+
+.logo__header{
+    width: 10%;
+    height: auto;
+    border-right: 1px solid;
+    border-color: #e5e5e5;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+nav{
+    text-transform: uppercase;
+    width: 100%;
+}
+li{
+    display: inline;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: #858585;
+    padding-right: 15px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
