@@ -1,40 +1,30 @@
-/*---LAYOUT---*/
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+p, img{
+    margin: 0;
+    padding: 0;
+}
 
+/*---LAYOUT---*/
 .body__container{
-    max-width: 1440px;
+    max-width: 1280px;
     margin: auto;
     background-color:#ffffff;
 }
-
-/*.debag .header__content, .debag .display__img, .debag .display__text__left, .debag .display__text__midle, .debag .display__text__right, .debag .footer__content{
-    background-color: aqua;
-}*/
 
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
-/*HEADER CONTENT*/
-.header__content{
-    min-height: 150px;
-    margin-bottom: 25px;
-}
-/*F.HEADER CONTENT*/
-/*F.MAIN*/
+/*MAIN*/
 .display__img{
-    min-height: 500px;
     margin-bottom: 20px;
-}
-.display__text__left, .display__text__midle, .display__text__right{
-    min-height: 650px;
-    margin-bottom: 10px;
 }
 .display__text__left, .display__text__right{
     width: 20%;
@@ -65,6 +55,7 @@ body{
 nav{
     text-transform: uppercase;
     width: 100%;
+    margin-bottom: 25px;
 }
 li{
     display: inline;
@@ -80,3 +71,80 @@ ul{
     padding: 0;
 }
 /*F.HEADER*/
+
+/*----MAIN---*/
+/*DISPLAY*/
+.img__text{
+    position: absolute;
+    color:white;
+    margin-left: 50px;
+}
+.title{
+    margin-top: 320px;
+    font-size: 28px;
+}
+.subtitle{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.banner__top, .overlay__banner{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+.banner__top{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    filter: opacity(60%);
+}
+.overlay__banner{
+    background-color: black;
+}
+/*F.DISPLAY*/
+/*CONTENT*/
+.title__content{
+    font-size: 36px;
+    font-weight: 700;
+}
+.subtitle__content{
+    color:#858585;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+.blok{
+    background-color: black;
+    border-radius: 15px;
+}
+
+.img__left, .img__center, .img__right{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: opacity(70%);
+}
+
+.intro{
+    text-align: left;
+    margin: 15px 0;
+    color: black;
+    font-size: 20px;
+}
+
+.sub_intro{
+    color: #858585;
+    font-size: 16px;
+}
+/*----F.MAIN*----/
+/*FOOTER*/
+.footer__text{
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    margin-top: 30px;
+}
+.cuore{
+    color:red;
+}
+/*F.FOOTER*/
